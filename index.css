@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1F2937;
+    color: #D5D4D8;
+}
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9375em;
+    
+}
+
+input {
+    padding: 0;
+    border: none;
+    height: 2.2em;
+}
+
+select {
+    padding-left: 0.384em;
+    width: 50%;
+}
+select,
+button {
+   border-radius: 6px; 
+   font-size: 0.7rem;
+   border: 1px solid #D1D5DB;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+button {
+    background: #FFFFFF;
+}
+
+input,
+select,
+button{
+    cursor: pointer;
+}
+
+/* Color Sheme Section */
+.color-scheme {
+    height: 75vh;
+}
+
+.color-schemes,
+.hex {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Hex Code Section */
+.hex {
+    justify-items: center;
+}
+
+section p {
+    font-size: 0.75rem; /* 12px */
+    cursor: pointer;
+}
+
+/* Pop-up message */
+
+.pop-up-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-up-container p {
+    display: none;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 13px;
+}
+
+/* Media Queries */
+
+@media(min-width: 768px){
+    select,
+    button {
+        border-radius: 6px; 
+        font-size: 0.9rem;
+        border: 1px solid #D1D5DB;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    
+    header {
+        justify-content: space-around;
+    }
+    
+}
+
+@media (min-width: 1280px){
+    header {
+        justify-content: center;
+    }
+    
+    .color-schemes,
+    .hex {
+        grid-template-columns: repeat(5, 200px);
+        justify-content: center;
+    }
+    
+    header {
+        padding: 3em;
+    }
+    
+    input {
+        height: 3em;
+        width: 4em;
+        padding: 0.09375em;
+    }
+    input,
+    button {
+         align-self: center;
+    }
+
+    select {
+        padding: 1.5em;
+        max-width: 700px;
+        margin: 0 30px;
+    } 
+    
+    button {
+       padding: 1em;
+    }
+    
+    select,
+    button,
+    section p,
+    .pop-up-container p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <header>
+            <input type="color" class="input-color" id="input-color" value="#F55A5A">
+            <select name="colors" id="select-scheme"
+                class="select-colors">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+            </select>
+            <button class="btn-color" id="btn-color">Get color scheme</button>
+        </header>
+        
+        <main>
+            <div class="color-schemes" id="color-schemes">
+            </div>
+        </main>
+        
+        <section>
+            <div class="hex" id="hex">
+            </div>
+        </section>
+        
+        <div class="pop-up-container">
+            <p class="pop-up-message" id="pop-up-message">Copied to clipboard</p>
+        </div>
+        
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
